@@ -22,7 +22,7 @@ function AccountFilter(props: Props) {
   const router = useRouter();
 
   const params = useSearchParams();
-  const accountId = params?.get("account") || "all";
+  const accountId = params?.get("accountId") || "all";
   const from = params?.get("from") || "";
   const to = params?.get("to") || "";
 

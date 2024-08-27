@@ -111,8 +111,8 @@ export function EditSheetTransaction() {
       <Sheet open={isOpen} onOpenChange={onClose}>
         <SheetContent side={"right"}>
           <SheetHeader>
-            <SheetTitle>Edit Category</SheetTitle>
-            <SheetDescription>Edit your Category</SheetDescription>
+            <SheetTitle>Edit Transaction</SheetTitle>
+            <SheetDescription>Edit your Transaction</SheetDescription>
           </SheetHeader>
           {query.isLoading ? (
             <div className="flex h-full w-full items-center justify-center">

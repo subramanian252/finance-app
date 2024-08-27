@@ -14,6 +14,8 @@ function CategoryButton(props: Props) {
 
   const { onOpen } = useEditTransaction();
 
+  const { onOpen: OnOpenCategory } = useEditCategory();
+
   if (!categoryId) {
     return (
       <div className=" text-black/90 flex" onClick={() => onOpen(id)}>
@@ -27,7 +29,7 @@ function CategoryButton(props: Props) {
       size={"sm"}
       variant={"secondary"}
       className=" cursor-pointer"
-      onClick={() => onOpen(categoryId)}
+      onClick={() => OnOpenCategory(categoryId)}
     >
       {category}
     </Button>
